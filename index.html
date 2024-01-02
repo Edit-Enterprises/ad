@@ -20,12 +20,26 @@
 
     <!-- Add your other scripts and the closing body and html tags -->
 </body>
-<script>
+<!-- <script>
     document.addEventListener("DOMContentLoaded", function() {
         var adContainer = document.getElementById("ad-container");
-        var imageElement = document.createElement("img");
-        imageElement.src = 'https://www.onlinekhabar.com/wp-content/uploads/2023/11/Current-banner-for-desktop1230x100-chow-chow-min1.gif';
-        adContainer.appendChild(imageElement);
+        // Create an image ad
+        var imageAd = document.createElement("img");
+        imageAd.src = "https://www.onlinekhabar.com/wp-content/uploads/2023/11/Current-banner-for-desktop1230x100-chow-chow-min1.gif"; // Replace with the actual path to your ad image
+        imageAd.alt = "Your ad description";
+        imageAd.style.width = "1230px"; // Adjust width as needed
+        imageAd.style.height = "120px"; // Adjust height as needed
+        imageAd.style.margin = "10px auto"; // Center the ad
+        // Add a link to the ad (optional)
+        imageAd.addEventListener("click", function() {
+            window.location.href = "https://www.onlinekhabar.com/wp-content/uploads/2023/11/Current-banner-for-desktop1230x100-chow-chow-min1.gif";
+        });
+        // Append the ad to the container
+        adContainer.appendChild(imageAd);
     });
-</script>
+</script> -->
+<script type="text/javascript">
+    var ad="<a href='https://www.onlinekhabar.com/wp-content/uploads/2023/11/Current-banner-for-desktop1230x100-chow-chow-min1.gif' target='_blank'><img src='https://www.onlinekhabar.com/wp-content/uploads/2023/11/Current-banner-for-desktop1230x100-chow-chow-min1.gif' width='1230' height='120' border='0' alt=''></a>"
+    document.write(ad);
+ </script>
 </html>
